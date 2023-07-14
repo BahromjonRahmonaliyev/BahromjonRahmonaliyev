@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.App{
+    display: flex;
+}
+
+.header-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 91.5vh;
+    background: #EEEEF5;
+    padding-left: 40px;
+    padding-right: 48px;
+
+    .center-card{
+        width: 100%;
+        height: 548px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50px;
+        align-items: center;
+        padding: 50px 0;
+        img{
+            margin-top: 18px;
+        }
+        h1{
+            color: #212121;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 72%;
+        }
+        a{
+            display: inline-flex;
+            padding: 15px 24px 14px 24px;
+            align-items: flex-start;
+            gap: 19px;
+            border-radius: 6px;
+            background: #1BC58D;
+            text-decoration: none;
+            color: #FFF;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+    }
+
+    .bottom-elements{
+        width: 100%;
+        padding: 0 48px 0 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+        .left{
+            button {
+                border: none;
+            
+                a {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 14px 16px;
+                    gap: 10px;
+                    border-radius: 6px;
+                    background: #1BC58D;
+                    color: #fff;
+                    font-family: Mulish;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 72%;
+                    text-decoration: none;
+            
+                    svg {
+                        color: #B5B5C3;
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+    }
+}
+
+.main{
+    width: 100%;
+}

@@ -1,0 +1,182 @@
+
+$easing: cubic-bezier(0.23, 1, 0.32, 1);
+$easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+$timing: 0.6s;
+
+$dot-clickarea: 0.75rem;
+$dot-width: 0.5rem;
+$dot-width-clickarea: $dot-width + $dot-clickarea;
+$dot-width-active: 1.25rem;
+$dot-width-active-clickarea: $dot-width-active + $dot-clickarea;
+$dot-spacing: 0.1rem;
+$dot-clickarea: $dot-width + 0.5rem;
+
+.header-search_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px 0 40px;
+
+    .right_search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .search-logo{
+            position: relative;
+            left: 2rem;
+        }
+
+        #search{
+            padding: .5rem 2.2rem;
+            border-radius: .75rem;
+            border: none;
+            outline: none;
+            background: #fff;
+
+        }
+    }
+    
+}
+
+.main-nav {
+    width: 100%;
+    padding: 0 48px 0 40px;
+    overflow: hidden;
+
+    table {
+        width: 100%;
+
+        tr th {
+            height: 4rem;
+            border-bottom: 1px solid #00000015;
+        }
+
+        tr td {
+            height: 4rem;
+            border-bottom: 1px solid #00000015;
+
+        }
+    }
+}
+.option-and-pagination{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px 0 40px;
+    margin-top: 2rem;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  
+    .pagination {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+  
+      &:hover {
+        button {
+          display: block;
+        }
+      }
+  
+      ul {
+        display: flex;
+        padding: 0;
+        gap: $dot-spacing;
+        list-style: none;
+        
+        li{
+            padding: 10px 15px ;
+            background: rgba(91, 92, 226, 1);
+            color: white;
+            opacity: .7;
+            border-radius: .5rem;
+            cursor: pointer;
+            
+        }
+        .active{
+            background: rgba(91, 92, 226, 1);
+            opacity: 1;
+        }
+        
+      }
+  
+      button {
+        position: relative;
+        height: 24px;
+        width: 24px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        appearance: none;
+        cursor: pointer;
+        transition: opacity 0.25s $easing;
+  
+        &:hover {
+          opacity: 1;
+        }
+  
+        &:active {
+          opacity: 0.8;
+  
+          &::before {
+            transform: rotate(35deg) scale(0.85);
+          }
+  
+          &::after {
+            transform: rotate(-35deg) scale(0.85);
+          }
+        }
+  
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          height: 2px;
+          width: 100%;
+          background: rgba(96, 96, 122, 1);
+          transition: transform 0.25s $easing;
+        }
+  
+        &:before {
+          transform: rotate(45deg);
+          animation: chevronEnterFirst 0.2s $easing-bounce;
+        }
+  
+        &:after {
+          transform: rotate(-45deg);
+  
+          animation: chevronEnterSecond 0.4s $easing-bounce;
+        }
+  
+        &.previous {
+          &::before,
+          &::after {
+            left: 20%;
+            transform-origin: 0% 50%;
+          }
+        }
+  
+        &.next {
+          &::before,
+          &::after {
+            right: 20%;
+            transform-origin: 100% 50%;
+          }
+        }
+      }
+    }
+  
+   
+  }
+  

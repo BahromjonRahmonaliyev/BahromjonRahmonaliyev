@@ -1,0 +1,479 @@
+.Navbar {
+    width: 100%;
+    display: flex;
+    background-color: red;
+    height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header2 {
+    width: 100%;
+    height: auto;
+
+    .header-top2 {
+        width: 100%;
+        height: 80px;
+        background: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 48px 0 40px;
+        box-shadow: 0px 5px 40px 0px rgba(33, 33, 33, 0.05);
+
+        .text {
+            h3 {
+                color: #212121;
+                font-family: Mulish;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+            }
+
+            p {
+                color: #B5B5C3;
+                font-family: Mulish;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 21px;
+            }
+        }
+
+        button {
+            border: none;
+
+            a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 14px 16px;
+                gap: 10px;
+                border-radius: 6px;
+                background: #F7F7FF;
+                color: #212121;
+                font-family: Mulish;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 72%;
+                text-decoration: none;
+
+                svg {
+                    color: #B5B5C3;
+                }
+            }
+        }
+    }
+
+    .header-center2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: rgba(238, 238, 245, 1);
+        padding: 40px;
+
+        form{
+            .center-card2 {
+                width: 100%;
+                border-radius: 12px;
+                background: #FFF;
+                padding: 20px 25px;
+    
+                button {
+                    display: flex;
+                    padding: 14px 16px;
+                    align-items: flex-start;
+                    border-radius: 5px;
+                    background: #F0F0F6;
+                    border: none;
+                    margin-top: 11px;
+                }
+    
+                .card1 {
+                    width: 1130px;
+                    height: 634px;
+                    border-radius: 9px;
+                    border: 1px solid #F0F0F6;
+                    margin-top: 40px;
+                    padding-right: 317px;
+                    padding-left: 49px;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+    display: flex;
+                        flex-direction: column;
+
+                        
+    
+                        .city {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 30px;
+    
+                            label {
+                                color: #212121;
+                                font-family: Mulish;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 72%;
+                            }
+    
+                            input {
+                                border-radius: 6px;
+                                background: #F6F6FB;
+                                width: 362px;
+                                height: 44px;
+                                flex-shrink: 0;
+                                margin-top: 12px;
+                                outline: none;
+                                border: none;
+                                padding: 0 20px;
+                            }
+                        }
+    
+                        .all {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 30px;
+    
+                            label {
+                                color: #212121;
+                                font-family: Mulish;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 72%;
+                            }
+    
+                            input {
+                                border-radius: 6px;
+                                background: #F6F6FB;
+                                width: 228px;
+                                height: 44px;
+                                height: 44px;
+                                flex-shrink: 0;
+                                margin-top: 12px;
+                                outline: none;
+                                border: none;
+                                padding: 0 20px;
+                            }
+                        }
+    
+                        .first-in {
+                            display: flex;
+                            flex-direction: column;
+    
+                            label {
+                                color: #212121;
+                                font-family: Mulish;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 72%;
+                            }
+    
+                            input {
+                                width: 764px;
+                                height: 44px;
+                                border-radius: 6px;
+                                background: #F6F6FB;
+                                margin-top: 12px;
+                                outline: none;
+                                border: none;
+                                padding: 0 20px;
+                            }
+                        }
+    
+                        .two-input {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 40px;
+                            margin-top: 30px;
+    
+                            .first {
+                                display: flex;
+                                flex-direction: column;
+    
+                                input {
+                                    border-radius: 6px;
+                                    background: #F6F6FB;
+                                    width: 362px;
+                                    height: 44px;
+                                    flex-shrink: 0;
+                                    border: none;
+                                    outline: none;
+                                    margin-top: 12px;
+                                    padding: 0 20px;
+                                }
+    
+                                label {
+                                    color: #212121;
+                                    font-family: Mulish;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 72%;
+                                }
+    
+                            }
+    
+                            .second {
+    
+                                display: flex;
+                                flex-direction: column;
+    
+                                input {
+                                    border-radius: 6px;
+                                    background: #F6F6FB;
+                                    width: 362px;
+                                    height: 44px;
+                                    flex-shrink: 0;
+                                    border: none;
+                                    outline: none;
+                                    margin-top: 12px;
+                                    outline-offset: 20px;
+                                    padding: 0 20px;
+                                }
+    
+                                label {
+                                    color: #212121;
+                                    font-family: Mulish;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 72%;
+                                }
+                            }
+                        }
+    
+                        .texttarea {
+                            margin-top: 30px;
+    
+                            label {
+                                color: #212121;
+                                font-family: Mulish;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 72%;
+                            }
+    
+                            textarea {
+                                width: 764px;
+                                height: 110px;
+                                border-radius: 6px;
+                                background: #F6F6FB;
+                                margin-top: 12px;
+                                outline: none;
+                                border: none;
+                                padding: 0 20px;
+                            }
+                        }
+    
+    
+                }
+    
+                .card2 {
+                    width: 1130px;
+                    height: 634px;
+                    border-radius: 9px;
+                    border: 1px solid #F0F0F6;
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    padding-right: 585px;
+                    padding-left: 49px;
+                    padding-top: 40px;
+                    padding-bottom: 50px;
+                    margin-top: 40px;
+    
+                    p {
+                        color: #A4A4BA;
+                        font-family: Mulish;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 72%;
+                    }
+    
+                    label {
+                        color: #212121;
+                        font-family: Mulish;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 72%;
+                    }
+    
+                    select {
+                        border-radius: 6px;
+                        background: #F6F6FB;
+                        width: 362px;
+                        width: 362px;
+                        height: 44px;
+                        border: none;
+                        outline: none;
+                        padding: 10px 20px;
+                        margin-top: 30px;
+                    }
+    
+                    .price {
+                        display: flex;
+                        margin-top: 30px;
+    
+                        gap: 40px;
+    
+                        .price-top {
+                            label {
+                                color: #212121;
+                                font-family: Mulish;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 72%;
+                            }
+    
+                            input {
+                                width: 228px;
+                                height: 44px;
+                                border-radius: 6px;
+                                background: #F6F6FB;
+                                border: none;
+                                outline: none;
+                                margin-top: 12px;
+                                padding-left: 20px;
+                            }
+                        }
+    
+                        .price-buttom {
+                            label {
+                                color: #212121;
+                                font-family: Mulish;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 72%;
+                            }
+    
+                            input {
+                                width: 228px;
+                                height: 44px;
+                                border-radius: 6px;
+                                background: #F6F6FB;
+                                border: none;
+                                outline: none;
+                                margin-top: 12px;
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+    
+                    .images {
+                        input {
+                            display: none;
+                        }
+                    }
+                }
+            }
+    
+            .date {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-top: 60px;
+            }
+    
+            .header-buttom {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                background: #FFF;
+                box-shadow: 0px 5px 40px 0px rgba(33, 33, 33, 0.05);
+                padding: 20px 0;
+                gap: 15px;
+        
+                button {
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    background: #1BC58D;
+                    border: none;
+                    outline: none;
+                    color: #FFF;
+                    font-family: Mulish;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 72%;
+                }
+        
+                .btn {
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    background: #F7F7FF;
+                    border: none;
+                    outline: none;
+                    color: #80809B;
+                    font-family: Mulish;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 72%;
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+
+.navbar2 {
+    width: 97px;
+    height: auto;
+    background: #5B5CE2;
+    box-shadow: 10px 0px 50px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin-top: 30px;
+    }
+
+    .icon2 {
+        margin-top: 28px;
+
+        .icon-card2 {
+            width: 49px;
+            height: 50px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+
+            svg {
+                color: white;
+            }
+        }
+
+        .icon-card2:hover {
+            border-radius: 6px;
+            background: #6C6DE5;
+            transition: 0.8s;
+        }
+    }
+}
